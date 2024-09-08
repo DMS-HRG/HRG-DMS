@@ -1,0 +1,71 @@
+# Driver Management System
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Driver Management System</h1>
+    </header>
+    <main>
+        <section id="login-signup">
+            <h2>Login or Signup</h2>
+            <form id="authForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login/Signup</button>
+            </form>
+        </section>
+        <section id="driver-info">
+            <h2>Enter Driver Information</h2>
+            <form id="driverForm">
+                <label for="driverName">Driver Name:</label>
+                <input type="text" id="driverName" name="driverName" required>
+                <label for="vehicleNumber">Vehicle Number:</label>
+                <input type="text" id="vehicleNumber" name="vehicleNumber" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="shift">Shift:</label>
+                <select id="shift" name="shift" required>
+                    <option value="day">Day</option>
+                    <option value="night">Night</option>
+                </select>
+                <label for="vehicleAverage">Vehicle Average:</label>
+                <input type="number" id="vehicleAverage" name="vehicleAverage" required>
+                <label for="maintenanceCost">Vehicle Maintenance (in Rs):</label>
+                <input type="number" id="maintenanceCost" name="maintenanceCost" required>
+                <label for="totalTrips">Total Trips:</label>
+                <input type="number" id="totalTrips" name="totalTrips" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="report-generation">
+            <h2>Generate Reports</h2>
+            <form id="reportForm">
+                <label for="specificDriver">Specific Driver:</label>
+                <input type="text" id="specificDriver" name="specificDriver">
+                <label for="specificVehicle">Specific Vehicle:</label>
+                <input type="text" id="specificVehicle" name="specificVehicle">
+                <label for="specificDate">Specific Date:</label>
+                <input type="date" id="specificDate" name="specificDate">
+                <label for="reportType">Report Type:</label>
+                <select id="reportType" name="reportType">
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+                <button type="submit">Generate Report</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Driver Management System</p>
+    </footer>
+</body>
+</html>
